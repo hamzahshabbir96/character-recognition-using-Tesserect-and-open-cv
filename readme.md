@@ -15,12 +15,13 @@ Objective of this application was to create a web app that can extract character
 
 ## Installation
 
-1.	Install tesseract-ocr [from](https://www.linkedin.com/in/hamzah-shabbir-108765a5/) and add to environment variable 
-2.	
+1.	Install tesseract-ocr [from](https://github.com/tesseract-ocr/tessdoc) and add to environment variable 
+2.	Create virtual environment and activate it
 
-```bash
-  npm install my-project
-  cd my-project
+```pip install virtualenv
+   virtualenv mypython
+   mypthon\Scripts\activate
+
 ```
 ## Authors
 
