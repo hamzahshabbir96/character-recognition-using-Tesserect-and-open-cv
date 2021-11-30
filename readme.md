@@ -19,13 +19,15 @@ This is a very robust deep learning method for predictive text based on this pap
 1.	Install tesseract-ocr [from](https://github.com/tesseract-ocr/tessdoc) and add to environment variable 
 2.	Create virtual environment and activate it
 
-```pip install virtualenv
+```
+pip install virtualenv
    virtualenv mypython
    mypthon\Scripts\activate
 
 ```
 3. Install requirement from requirements.txt
-```pip install -r requirements.txt
+```
+pip install -r requirements.txt
 
 ```
 4. Open 'views.py' and add following lines of code-
