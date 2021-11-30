@@ -117,7 +117,7 @@
                     <div class = "file-field input-field">
                       <div class = "btn" style="background-color: #71D0C5">
                         <span>Browse</span>
-                        <input type = "file" name="image_upload" id="image_upload" />
+                        <input type = "file" name="id_image" id="id_image" />
                       </div>
                       <div class = "file-path-wrapper">
                         <input class = "file-path validate" type = "text" placeholder = "Upload Image" name="image_name" id="image_name" />
@@ -164,7 +164,7 @@
     var imagebox = document.getElementById('imagebox');
     var textbox = document.getElementById('textboxes');
 
-    document.getElementById('image_upload').onchange = function () {
+    document.getElementById('id_image').onchange = function () {
         document.getElementById('image_name').value = this.value.slice(12,100);
     };
 
