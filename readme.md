@@ -4,13 +4,24 @@
 
 
     
-# Book Genre prediction using Machine learning
+# Application of character recognition to extract text from images using Tesserect and openCV
 
-This Machine learning web application will predict genre of a book. User has to enter summary of any book and then click 'Predict genre' and it will display genre based on summary.  
+Objective of this application was to create a web app that can extract character from images. In recent years with advancement in computation and data processing, deep learning has taken a huge popularity. One of the applications of neural network can be to process image and train image to localize and even extract text out of image. With the conversion of images in array, it is possible to make computation and training over images followed by text localization, character segmentation and eventually character recognition.
 
-![Logo](images/1.jpg)
+![Logo](images/1.png)
+![Logo](images/2.png)
 
 
+
+## Installation
+
+1.	Install tesseract-ocr [from](https://www.linkedin.com/in/hamzah-shabbir-108765a5/) and add to environment variable 
+2.	
+
+```bash
+  npm install my-project
+  cd my-project
+```
 ## Authors
 
 - [@hamzahshabbir](https://www.linkedin.com/in/hamzah-shabbir-108765a5/)
