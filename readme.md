@@ -28,11 +28,11 @@ This is a very robust deep learning method for predictive text based on this pap
 ```pip install -r requirements.txt
 
 ```
-4. Open ```views.py``` and add following lines of code-
+4. Open 'views.py' and add following lines of code-
 ```pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 ```
-5. Open ```views.py``` and set language to 'eng' for english.
+5. Open 'views.py' and set language to 'eng' for english.
 ```language='eng'
 
 ```
