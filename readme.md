@@ -20,7 +20,7 @@ This is a very robust deep learning method for predictive text based on this pap
 2.	Create virtual environment and activate it
 
 ```
-pip install virtualenv
+    pip install virtualenv
    virtualenv mypython
    mypthon\Scripts\activate
 
@@ -31,11 +31,13 @@ pip install -r requirements.txt
 
 ```
 4. Open 'views.py' and add following lines of code-
-```pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+```
+    pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 ```
 5. Open 'views.py' and set language to 'eng' for english.
-```language='eng'
+```
+    language='eng'
 
 ```
 
