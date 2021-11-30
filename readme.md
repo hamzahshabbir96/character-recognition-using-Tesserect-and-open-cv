@@ -1,17 +1,38 @@
-Step to run application locally:
-Step 1:	Create the copy of the project.
-Step 2: Open command prompt and change your current path
-to folder where you can find 'app.py' file.
-Step 3: Create environment by command given below-
-conda create -name <environment name>
-Step 4: Activate environment by command as follows-
-conda activate <environment name>
-Step 5: Install tesseract using windows installer available at: https://github.com/UB-Mannheim/tesseract/wiki
-Step 6: Note the tesseract path from the installation. Default installation path at the time of this edit was: C:\ProgramFiles\Tesseract-OCR. It may change so please check the installation path.
-Step 7: pytesseract.pytesseract.tesseract_cmd = r'C:\ProgramFiles\Tesseract-OCR\tesseract.exe'
-Step 8: Use command below to install required dependencies-
-python -m pip install -r requirements.txt
-Step 9: Run application by command-
-python app.py
-You will get url copy it and paste in browser.
-Step 10: You have sample_data folder where you can get images to test.
+
+
+
+![Logo](images/ss.png)
+
+    
+# Book Genre prediction using Machine learning
+
+This Machine learning web application will predict genre of a book. User has to enter summary of any book and then click 'Predict genre' and it will display genre based on summary.  
+
+[![Demo Video](images/demo.gif)](https://www.youtube.com/embed/WVteofPq9_8)
+
+
+## Authors
+
+- [@hamzahshabbir](https://www.linkedin.com/in/hamzah-shabbir-108765a5/)
+
+  
+## Acknowledgements
+
+ - [Scikit-Learn](https://scikit-learn.org/stable/)
+ - [Natural Language Toolkit](https://www.nltk.org/)
+ - [Flask](https://flask.palletsprojects.com/en/2.0.x/)
+
+  
+https://github.com/hamzahshabbir96/natural-language-genre-prediction/issues/1#issue-1059243551
+
+  
+## Feedback
+
+If you have any feedback, please reach out to me at hamzahshabbir7@gmail.com
+
+  
+## 🔗 Links
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hamzah-shabbir-108765a5/)
+
+  
+
