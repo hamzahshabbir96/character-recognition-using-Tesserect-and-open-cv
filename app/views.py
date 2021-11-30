@@ -1,4 +1,3 @@
-# Important imports
 from app import app
 from flask import request, render_template, url_for
 import os
@@ -8,25 +7,25 @@ from PIL import Image
 import random
 import string
 import pytesseract
+#download tesserect
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 # Adding path to config
 app.config['INITIAL_FILE_UPLOADS'] = 'app/static/uploads'
 language='eng'
-# Route to home page
 @app.route("/", methods=["GET", "POST"])
 def index():
 
 	# Execute if request is get
 	if request.method == "GET":
-		full_filename =  'images/white_bg.jpg'
+		file_name =  'images/default.jpg'
 		return render_template("index1.html", full_filename = full_filename)
 
 	# Execute if reuqest is post
 	if request.method == "POST":
 
 
-		image_upload = request.files['image_upload']
-		imagename = image_upload.filename
+		id_image = request.files['image_upload']
+		imagename = id_image.filename
 		image = Image.open(image_upload)
 
 		# Converting image to array
@@ -40,7 +39,7 @@ def index():
 		letters = string.ascii_lowercase
 		# Generating unique image name for dynamic image display
 		name = ''.join(random.choice(letters) for i in range(10)) + '.png'
-		full_filename =  'uploads/' + name
+		file_name =  'uploads/' + name
 
 		# Extracting text from image
 		custom_config = '-l '+language+' --oem 3 --psm 6'
@@ -59,7 +58,7 @@ def index():
 		img = Image.fromarray(image_arr, 'RGB')
 		img.save(os.path.join(app.config['INITIAL_FILE_UPLOADS'], name))
 		# Returning template, filename, extracted text
-		return render_template('index1.html', full_filename = full_filename, text = new_string)
+		return render_template('index1.html', file_name = file_name, text = new_string)
 
 
 @app.route('/about/', methods=["GET"])
